@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link href="character.css" rel="stylesheet" type="text/css" />
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="character.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="loading" class="hide"></div>
+        <div id="confirm-modal" class="hide">
+            <div class="modal-content">
+                <p>Você deseja excluir o personagem?</p>
+                <input type="hidden" name="cid" value="">
+                <button id="char-delete-confirm" class="confirm">Confirmar</button>
+                <button id="char-delete-cancel" class="cancel">Cancelar</button>
+            </div>
+        </div>
+        <div id="start" class="hide">
+            <div class="header">
+                Bem vindo ao <span style="color: #D53D3C">ART</span><br>
+                Pressione <span class="blinking">ENTER</span> para continuar!
+            </div>
+            <div class="wrap-updates">
+                <div class="updates">
+                    <p class="title">Atualizações:</p>
+                    <div class="text-content">
+                        <p>* Lançamento oficial.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span style="padding-left: 20px;" class="left">
+                    Copyright © 2020 Emerson Santiago
+                </span>
+                <span style="padding-right: 20px;" class="right">
+                    Patch 1.0b
+                </span>
+            </div>
+        </div>
+        <div id="characterlist" class="hide">
+            <div class="wrap-character-info">
+            </div>
+        </div>
+        <div id="createchar" class="hide">
+            <div class="wrap-character-info">
+                <div class="create-character-info">
+                    <form id="save-char">
+                        <div class="container-form">
+                            <label>Nome:</label><input type="text" name="name" required><br>
+                            <label>Idade:</label><input type="number" name="age" required><br>
+                            <label>Resumo do personagem:</label><textarea rows="5" maxlength="255" name="bio" required></textarea>
+                            <div class="create-actions">
+                                <button type="submit" class="create">Criar</button>
+                                <div class="back-btn">Voltar</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="spawnpoints" class="hide">
+        </div>
+    </body>
+</html>

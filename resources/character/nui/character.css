@@ -1,0 +1,406 @@
+@font-face {
+    font-family: "concertone";
+    src: url(fonts/ConcertOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "stem";
+    src: url(fonts/stem.ttf);
+}
+
+html, body, p {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	border: 0;
+}
+
+input {
+	background-color: white;
+	border: 0;
+	-webkit-appearance: none; 
+	margin: 0; 
+    outline: none;
+}
+
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button {
+	border: 0;
+	-webkit-appearance: none; 
+	margin: 0; 
+    outline: none;
+}
+
+input:focus {
+	margin: 0; 
+	border: 0;
+	-webkit-appearance: none;
+    outline: none;
+}
+
+textarea:focus {
+	-webkit-appearance: none;
+    outline: none;
+}
+
+textarea {
+	margin: 0; 
+	border: 0;
+	resize: none;
+}
+
+#loading {
+	width: 100%;
+    height: 100%;
+    background-color: #2b1d2c;
+    background-image: url(img/background.png);
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#createchar {
+	width: 100%;
+    height: 100%;
+    background-color: #2b1d2c;
+    background-image: url(img/background.png);
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#start {
+	width: 100%;
+    height: 100%;
+    background-color: #2b1d2c;
+    background-image: url(img/background.png);
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#characterlist {
+	width: 100%;
+    height: 100%;
+    background-color: #2b1d2c;
+    background-image: url(img/background.png);
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.create-character-info {
+	font-family: "concertone";
+	overflow: hidden;
+	min-width: 300px;
+	max-width: 300px;
+	min-height: 300px;
+	max-height: 300px;
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 50px;
+	border: 2px solid black;
+	border-radius: 2%;
+	background: rgba(0,0,0,0.7);
+	position: relative;
+}
+
+.container-form {
+	display: grid;
+	color: white;
+	margin: 10;
+	text-align: left;
+}
+
+.empty {
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.header {
+	border-bottom: 1px solid black;
+	text-align: center;
+	font-size: 40px;
+	font-family: "concertone";
+	color: white;
+	width: 100%;
+	height: 100px;
+	padding: 20;
+	background: rgba(0,0,0,0.7);
+}
+
+.blinking {
+    animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0%{     color: #D53D3C;    }
+    49%{    color: #D53D3C; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #D53D3C;    }
+}
+
+.wrap-updates {
+  	margin: auto;
+  	margin-top: 100px;
+ 	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.wrap-character-info {
+  	margin: auto;
+ 	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.updates {
+	color: white;
+	border: 1px solid black;
+	font-family: "roboto";
+	overflow: hidden;
+	min-width: 300px;
+	max-width: 300px;
+	min-height: 250px;
+	max-height: 250px;
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 30;
+	background: rgba(0,0,0,0.7);
+	position: relative;
+}
+
+.updates .title {
+	font-size: 20px;
+	text-align: center;
+}
+
+.updates .text-content {
+	line-height: 20px;
+	margin-top: 20px;
+	text-align: left;
+	font-size: 16px;
+}
+
+.text-content p {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.footer {
+	font-size: 12px;
+	height: 30px;
+	font-family: "roboto";
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	color: white;
+	border-top: 1px solid black;
+    position: absolute;
+    bottom: 0;
+}
+
+.character-info {
+	font-family: "concertone";
+	overflow: hidden;
+	min-width: 300px;
+	max-width: 300px;
+	min-height: 300px;
+	max-height: 300px;
+	display: inline-block;
+	margin-left: 50px;
+	margin-right: 50px;
+	border: 2px solid black;
+	border-radius: 2%;
+	background: rgba(0,0,0,0.7);
+	position: relative;
+}
+
+.character-info:hover {
+	background-color: #420F27;
+}
+
+.character-info .bio {
+	color: white;
+	margin: 10;
+	text-align: left;
+}
+
+.character-info .name {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.actions {
+	position: absolute;
+    bottom: 0;
+}
+
+.select, .create {
+	cursor: pointer;
+	padding: 10;
+	background-color: #0c9463;
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+}
+
+.delete {
+	cursor: pointer;
+	padding: 10;
+	background-color: #c81912;
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+	left: 135px;
+}
+
+.back-btn {
+	cursor: pointer;
+	padding: 10;
+	background-color: #c81912;
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+	float: right;
+	font-family: arial;
+	font-size: 13.3333px;
+}
+
+.container-form input {
+	padding: 5px;
+}
+
+.create-actions {
+	margin-top: 15px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.flex {
+	display: flex;
+}
+
+#confirm-modal {
+    width: 300px;
+    height: 100px;
+    z-index: 9900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+   	border: 2px solid black;
+	border-radius: 2%;
+	background: rgba(0,0,0,0.7);
+}
+
+#confirm-modal .modal-content {
+	font-family: "concertone";
+	color: white;
+	margin: 10;
+	text-align: center;
+}
+
+#confirm-modal .modal-content p {
+	margin-bottom: 20px;
+}
+
+#confirm-modal .modal-content button {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.confirm {
+	cursor: pointer;
+	padding: 10;
+	background-color: #0c9463;
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+	bottom: 0;
+}
+
+.cancel {
+	cursor: pointer;
+	padding: 10;
+	background-color: #c81912;
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+	bottom: 0;
+}
+
+.spawnoption {
+	font-weight: 400;
+	line-height: 25px;
+    font-family: "stem";
+    letter-spacing: 1px;
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 30px;
+    color: white;
+    height: 32px;
+    width: 225px;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.spawnoption:hover {
+	background-color: #052F06;
+}
+
+.spawnheader {
+	font-weight: 400;
+	line-height: 25px;
+    font-family: "stem";
+    letter-spacing: 1px;
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: white;
+    height: 32px;
+    width: 225px;
+    background-color: #052F06;
+    text-align: center;
+    opacity: 0.9;
+}

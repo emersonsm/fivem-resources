@@ -1,0 +1,478 @@
+@font-face {
+    font-family: "roboto";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.hide {
+	display: none;
+}
+
+#mainUI {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#yellowMainUI {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.phone-mock {
+	display: block;
+	height: 550px;
+	position: absolute;
+  	bottom: 5;
+  	right: 5;
+  	width: 300px;
+  	z-index: 3;
+}
+
+.top-header {
+    background-color: black;
+    width: 293px;
+    height: 25px;
+    z-index: 5;
+    position: absolute;
+    bottom: 502px;
+    right: 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.fa-battery-full {
+	color: white;
+	z-index: 5;
+	position: absolute;
+	left: 5px;
+	top: 2px;
+}
+
+.fa-signal {
+	color: white;
+	z-index: 5;
+	position: absolute;
+	right: 5;
+	font-size: 12px;
+    top: 4px;
+}
+
+.call {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+}
+
+.message {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+	left: 72px;
+}
+
+.contacts {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+	left: 145px;
+}
+
+.yellow-pages {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+	left: 218px;
+}
+
+.bank {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+	top: 75px;
+}
+
+.camera {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+	top: 75px;
+	left: 73px;
+}
+
+.police {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+	top: 75px;
+	left: 145px;
+}
+
+.hospital {
+	cursor: pointer;
+    position: absolute;
+    width: 73px;
+    height: 70px;
+	top: 75px;
+	left: 218px;
+}
+
+.green {
+	color: #1B5E20;
+}
+
+.blue {
+	color: #304FFE;
+}
+
+.blue-alt {
+	color: #0288D1;
+}
+
+.black {
+	color: black;
+}
+
+.yellow {
+	color: #FFD600;
+}
+
+.green-alt {
+	color: #00C853;
+}
+
+.grey {
+	color: #616161;
+}
+
+.red {
+	color: #D50000;
+}
+
+.fa-square {
+	font-size: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-phone-alt {
+	font-size: 35px;
+	color: white;
+	z-index: 5;
+	position: relative;
+	left: 19px;
+    bottom: 57px;
+}
+
+.fa-comments {
+	font-size: 35px;
+	color: white;
+	z-index: 5;
+	position: relative;
+	left: 17px;
+    bottom: 56px;
+}
+
+.fa-list-ul {
+	font-size: 35px;
+	color: white;
+	z-index: 5;
+	position: relative;
+	left: 19px;
+    bottom: 55px;
+}
+
+.fa-dollar-sign {
+	font-size: 38px;
+	color: white;
+	z-index: 5;
+	position: relative;
+	left: 26px;
+    bottom: 57px;
+}
+
+.fa-user {
+	font-size: 35px;
+	color: white;
+	z-index: 5;
+	position: relative;
+	left: 22px;
+    bottom: 56px;
+}
+
+.fa-camera {
+	font-size: 35px;
+	color: white;
+	z-index: 5;
+	position: relative;
+	left: 19px;
+    bottom: 57px;
+}
+
+.police img {
+	width: 45px;
+    height: 45px;
+	z-index: 5;
+	position: relative;
+	left: 15px;
+    bottom: 62px;
+}
+
+.fa-ambulance {
+	font-size: 32px;
+	color: white;
+	z-index: 5;
+	position: relative;
+	left: 18px;
+    bottom: 55px;
+}
+
+.content {
+	background-image: url("img/phone-bg.png");
+    background-repeat: no-repeat;
+	width: 292px;
+    height: 482px;
+    z-index: 5;
+    position: absolute;
+    bottom: 21px;
+    right: 9px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.scrollable {
+	overflow-x: hidden; 
+	overflow-x: auto;
+}
+
+.menu {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.time {
+	font-family: "roboto";
+	color: white;
+	font-size: 12px;
+	left: 30px;
+	top: 3px;
+	position: relative;
+}
+
+.cloud {
+	overflow: hidden;
+	font-family: "roboto-medium";
+	text-align: justify;
+	margin: 20px 20px 0px 20px;
+	font-size: 13px;
+	padding: 10px;
+	background-color: #fddb3a;
+	border-top: 1px black solid;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.cloud-footer {
+	overflow: hidden;
+	font-family: "roboto-medium";
+	background-color: #fddb3a;
+	margin: 0px 20px 0px 20px;
+	border-radius: 18px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+	padding: 10px;
+	font-size: 12px;
+	border-bottom: 1px black solid;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+}
+
+.cloud-footer .name {
+	text-align: center;
+	font-style: italic;
+}
+
+.cloud-footer .phone {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.content::-webkit-scrollbar {
+	width: 5px;
+}
+ 
+.content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.content::-webkit-scrollbar-thumb {
+  background-color: #5b5656;
+  outline: 1px solid #5b5656;
+  border-radius: 18px;
+}
+
+.nm {
+	margin: 0px !important;
+}
+
+.new-post-wrap {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 45px;
+}
+
+#new-post-message {
+	color: white;
+	border: 0 !important;
+	resize: none;
+	overflow: hidden;
+	font-family: "roboto-medium";
+	margin: 20px 20px 0px 20px;
+	font-size: 13px;
+	padding: 10px;
+	background-color: transparent;
+    border-radius: 18px 18px 18px 18px;
+    font-size: 14px;
+}
+
+#new-post-message:hover, #new-post-message:focus {
+    background-color: transparent;
+    opacity: 0.8;
+    border: 1px solid #56B4EF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#new-post-message::placeholder, #new-post-message:hover::placeholder {
+	color: white;
+}
+
+#new-post-message:focus::placeholder {
+  color: transparent;
+}
+
+#new-post-message::-webkit-input-placeholder {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#new-post-message:-moz-placeholder {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#new-post-message::-moz-placeholder {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#new-post-message:-ms-input-placeholder {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.money {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	line-height: 175px;
+	text-align: center;
+	color: #00C853;
+	font-family: "roboto-medium";
+	font-size: 45px;
+}
+
+.base {
+	margin: 20px;
+	background: #ccc;
+	height: 150px;
+	border-radius: 15px;
+}
+
+.inner-wrap {
+	background-color: #0c0014;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230d1838' points='1600%2C160 0%2C460 0%2C350 1600%2C50'/%3E%3Cpolygon fill='%230e315d' points='1600%2C260 0%2C560 0%2C450 1600%2C150'/%3E%3Cpolygon fill='%230f4981' points='1600%2C360 0%2C660 0%2C550 1600%2C250'/%3E%3Cpolygon fill='%231062a6' points='1600%2C460 0%2C760 0%2C650 1600%2C350'/%3E%3Cpolygon fill='%23117aca' points='1600%2C800 0%2C800 0%2C750 1600%2C450'/%3E%3C/g%3E%3C/svg%3E");
+	background-size: auto 147%;
+	background-position: center;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 13px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.logo-name {
+	text-align: center;
+	font-size: 17px;
+	color: #f8e889;
+	font-family: "roboto-medium";
+}
+
+.gold path{
+	fill: url(#gold-gradient);
+}
+
+.chip {
+	margin-top: 10px;
+	height: 25px;
+	width: 25px;
+	margin-bottom: 10px;
+}
+
+.card-number {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+.card-number ul {
+    margin: auto;
+	padding: 0;
+}
+
+.card-number li {
+	float: left;
+  	margin: 0px 10px;
+	list-style-type: none;
+}
+
+#first-li {
+	margin-left: 0;
+}
+
+#last-li {
+	margin-right: 0;
+}

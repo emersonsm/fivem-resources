@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link href="bank.css" rel="stylesheet" type="text/css" />
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="bank.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <div class="container hide" id="container">
+    	<div id="result"></div>
+		<div class="topbar">
+			<nav>
+				<img src="img/logo-top.png"/>
+				<p class="top-text">Bem vindo(a), <span class="name"></span><br>Saldo atual: <span class="balance"></span>$</p>
+			</nav>
+		</div>
+		<div class="content hide" id="optionsUI">
+			<div class="flex sb mb-100">
+				<div class="options">
+					<button class="btn-purple" id="withdraw">
+						<p>retirar</p>
+					</button>
+				</div>
+				<div class="options">
+					<button class="btn-purple" id="deposit">
+						<p>depositar</p>
+					</button>
+				</div>
+			</div>
+			<div class="flex sb mb-100">
+				<div class="options">
+					<button class="btn-purple" id="transfer">
+						<p>transferir</p>
+					</button>
+				</div>
+				<div class="options">
+					<button class="btn-purple" id="quick">
+						<p>saque $100</p>
+					</button>
+				</div>
+			</div>
+			<div class="flex sb mb-100 close">
+				<div class="options">
+					<button class="btn-purple" id="close">
+						<p>fechar</p>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="content hide" id="withdrawUI">
+			<div class="flex sb mb-100">
+				<div class="banner">
+					<p>Retire a quantia<br>
+	    			<span>Da sua conta</span></p>
+				</div>
+				<button class="back">
+    				<p>Retornar<br>
+    				<span>Ao menu principal</span></p>
+				</button>
+			</div>
+			<form id="withdrawR">
+				<div class="input-cont box-shadow">
+					<label>Quantia a ser retirada:</label>
+					<input id="amountw" type="number" placeholder="0 $">
+				</div>
+				<button class="validate" type="submit">
+    				<p>Validar</p>
+				</button>
+			</form>
+		</div>
+		<div class="content hide" id="depositUI">
+			<div class="flex sb mb-100">
+				<div class="banner">
+					<p>Deposite uma quantia<br>
+	    			<span>Na sua conta</span></p>
+				</div>
+				<button class="back">
+    				<p>Retornar<br>
+    				<span>Ao menu principal</span></p>
+				</button>
+			</div>
+			<form id="depositR">
+				<div class="input-cont box-shadow">
+					<label>Quantia a ser depositada:</label>
+					<input id="amountd" type="number" placeholder="0 $">
+				</div>
+				<button class="validate" type="submit">
+    				<p>Validar</p>
+				</button>
+			</form>
+		</div>
+	</div>
+    </body>
+</html>

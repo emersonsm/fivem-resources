@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "squadaone";
+    src: url(fonts/squada-one-regular.ttf);
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url(fonts/SourceSansPro-SemiBold.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#menucontainer {
+    position: absolute;
+    right: 300px;
+    top: 450px;
+}
+
+.menuoption {
+    font-family: "source-sans-pro";
+    display: block;
+    font-size: 20px;
+    margin: 4px;
+    color: rgb(245, 245, 245);
+    height: 32px;
+    width: 225px;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+    border: 1px #151515 solid;
+}
+
+.menuheader {
+    line-height: 50px;
+    font-family: "squadaone";
+    display: block;
+    font-size: 25px;
+    margin: 4px;
+    color: rgb(245, 245, 245);
+    height: 50px;
+    width: 225px;
+    background-color: #40514e;
+    text-align: center;
+    opacity: 0.9;
+    border: 1px #151515 solid;
+}
+
+.menuoption.selected {
+    background-color: #2c2c2c;
+}
